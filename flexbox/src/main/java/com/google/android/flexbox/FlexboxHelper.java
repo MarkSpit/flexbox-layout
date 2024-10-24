@@ -617,7 +617,7 @@ class FlexboxHelper {
                 sumCrossSize = -flexLine.getCrossSize();
                 reachedToIndex = true;
             }
-            if (sumCrossSize > needsCalcAmount && reachedToIndex) {
+            // if (sumCrossSize > needsCalcAmount && reachedToIndex) {
                 // Stop the calculation if the sum of cross size calculated reached to the point
                 // beyond the needsCalcAmount value to avoid unneeded calculation in a
                 // RecyclerView.
@@ -625,8 +625,8 @@ class FlexboxHelper {
                 // but we omit adding the decoration length because even without the decorator
                 // length, it's guaranteed that calculation is done at least beyond the
                 // needsCalcAmount
-                break;
-            }
+                // break;
+            // }
         }
 
         result.mChildState = childState;
